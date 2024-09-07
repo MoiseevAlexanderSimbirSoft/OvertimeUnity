@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 public class MainMenu : MonoBehaviour
 {
-    public void SelectSamara()
+    public void navigate(string targetScene)
     {
-        SceneManager.LoadSceneAsync("Assets/Scenes/SamaraOffice.unity");
-    }
+        SceneManager.LoadSceneAsync(targetScene);
+    } 
 }
