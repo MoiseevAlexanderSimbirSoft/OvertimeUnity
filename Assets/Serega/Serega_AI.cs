@@ -22,7 +22,7 @@ public class Serega_AI : MonoBehaviour
     {
         AI_Agent.SetDestination(Player.transform.position);
         float Dist_Player = Vector3.Distance(Player.transform.position, gameObject.transform.position);
-        if(Dist_Player < 0.5)
+        if(Dist_Player < 1)
         {
             Player.SetActive(false);
             gameOverText.text = "Серега оказался быстрее";
