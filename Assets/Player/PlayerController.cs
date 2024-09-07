@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 3.0f;
+    public float moveSpeed = 2.5f;
     public float gravity = 1f;
-    public float jumpHeight = 0.1f;
-    
+    public float jumpHeight = 0.01f;
+
     private CharacterController controller;
     private Vector3 velocity;
     private bool isGrounded;
@@ -32,12 +32,11 @@ public class PlayerController : MonoBehaviour
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
-        
         controller.Move(moveDirection * moveSpeed * Time.deltaTime);
 
         if (isGrounded && Input.GetButtonDown("Jump"))
         {
-            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            velocity.y = Mathf.Sqrt(jumpHeight * -1f * gravity);
         }
 
         velocity.y += gravity * Time.deltaTime;

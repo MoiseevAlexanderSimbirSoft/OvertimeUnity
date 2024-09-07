@@ -33,12 +33,7 @@ public class DoorInteraction : MonoBehaviour
 
             if (doorRenderer != null)
             {
-                Material[] materials = doorRenderer.materials;
-                for (int i = 0; i < materials.Length; i++)
-                {
-                    materials[i] = highlightMaterial;
-                }
-                doorRenderer.materials = materials;
+                doorRenderer.material = highlightMaterial;
             }         
             if (Input.GetKeyDown(openKey))
             {
