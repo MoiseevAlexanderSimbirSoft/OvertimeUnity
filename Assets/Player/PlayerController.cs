@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed = 5.0f;
-
-    private CharacterController controller;
+    public float moveSpeed = 3.0f;
+    public float gravity = 1f;
+    public float jumpHeight = 0.1f;
     
+    private CharacterController controller;
+    private Vector3 velocity;
+    private bool isGrounded;
+
     private void Start()
     {
         controller = GetComponent<CharacterController>();
@@ -17,13 +21,27 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        isGrounded = controller.isGrounded;
+
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-        
+
         Vector3 moveDirection = transform.forward * verticalInput + transform.right * horizontalInput;
         
-        moveDirection.y -= 9.81f * Time.deltaTime;
-        
         controller.Move(moveDirection * moveSpeed * Time.deltaTime);
+
+        if (isGrounded && Input.GetButtonDown("Jump"))
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2f * gravity);
+        }
+
+        velocity.y += gravity * Time.deltaTime;
+
+        controller.Move(velocity * Time.deltaTime);
     }
-}  
+}
