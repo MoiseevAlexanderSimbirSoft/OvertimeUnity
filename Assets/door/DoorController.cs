@@ -21,11 +21,6 @@ public class DoorController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(openKey))
-        {
-            isOpen = !isOpen;
-        }
-
         if (isOpen)
         {
             door.localRotation = Quaternion.Slerp(door.localRotation, openRotation, Time.deltaTime * openSpeed);
@@ -34,5 +29,10 @@ public class DoorController : MonoBehaviour
         {
             door.localRotation = Quaternion.Slerp(door.localRotation, closedRotation, Time.deltaTime * openSpeed);
         }
+    }
+
+    public void ToggleDoor()
+    {
+        isOpen = !isOpen;
     }
 }
