@@ -1224,8 +1224,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2.5
+  crouchSpeed: 1.25
+  sprintSpeed: 5
   gravity: -1
   jumpHeight: 3
+  crouchHeight: 1
+  standingHeight: 2
 --- !u!143 &1448733446
 CharacterController:
   m_ObjectHideFlags: 0
