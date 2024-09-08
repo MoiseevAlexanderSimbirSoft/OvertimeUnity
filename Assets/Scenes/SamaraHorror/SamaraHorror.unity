@@ -3354,8 +3354,8 @@ MonoBehaviour:
   moveSpeed: 2.5
   crouchSpeed: 1.25
   sprintSpeed: 5
-  gravity: -1
-  jumpHeight: 3
+  gravity: -20
+  jumpHeight: 2
   crouchHeight: 1
   standingHeight: 2
 --- !u!143 &1286128453
