@@ -6,7 +6,6 @@ using TMPro;
 public class KeyManager : MonoBehaviour
 {
     public static KeyManager Instance { get; private set; }
-    public TextMeshProUGUI keyText;
     public WinMenu winMenu;
     private int keyCount = 0;
     private GameObject Player;
@@ -38,15 +37,11 @@ public class KeyManager : MonoBehaviour
 
     private void UpdateKeyText()
     {
-        if (keyText != null)
-        {
-            keyText.text = "Keys: " + keyCount;
-        }
-
         if (keyCount >= 1)
         {
             winMenu.ShowWinMenu();
             Player.SetActive(false);
         }
     }
+    
 }

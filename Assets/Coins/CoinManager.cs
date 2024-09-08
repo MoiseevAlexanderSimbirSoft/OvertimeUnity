@@ -37,7 +37,7 @@ public class CoinManager : MonoBehaviour
     {
         if (coinText != null)
         {
-            coinText.text = "Coins: " + coinCount;
+            coinText.text = "Собрано монет " + coinCount + "из 10";
         }
     }
 }
