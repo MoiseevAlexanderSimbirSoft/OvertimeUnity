@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: a87eaf9e419ce45f3a7214f8c40d9193
   - enabled: 1
     path: Assets/Scenes/SamaraOffice.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SamaraHorror/SamaraHorror.unity
     guid: faa6e241c2e859f428fa0f7477843841
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/SamaraCoins.unity
     guid: 89266373e7fae6f42b53101b44fe2e74
   m_configObjects: {}

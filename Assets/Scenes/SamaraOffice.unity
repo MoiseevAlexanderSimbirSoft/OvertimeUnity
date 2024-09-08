@@ -472,7 +472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1021292574}
-  openAngle: -90
+  openAngle: 90
   openSpeed: 2
   interactionDistance: 1.5
   openKey: 101
@@ -846,7 +846,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1031520063}
-  openAngle: -90
+  openAngle: 90
   openSpeed: 2
   interactionDistance: 1.5
   openKey: 101
@@ -899,7 +899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 119320649}
-  openAngle: -90
+  openAngle: 90
   openSpeed: 2
   interactionDistance: 1.5
   openKey: 101
@@ -2304,7 +2304,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a709245f02f71e245aac60c4527f8e90, type: 2}
-  - {fileID: 2100000, guid: 81fe22d452f70124ea393baa3df2ae19, type: 2}
+  - {fileID: 2100000, guid: a233a91d2b91f014d843a134b064442e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2684,7 +2684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1917671870}
-  openAngle: 90
+  openAngle: -90
   openSpeed: 2
   interactionDistance: 1.5
   openKey: 101
@@ -3695,7 +3695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 982846852}
-  openAngle: -90
+  openAngle: 90
   openSpeed: 2
   interactionDistance: 1.5
   openKey: 101
@@ -3840,7 +3840,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f77d41df4f0985548a81296a421fbb96, type: 2}
-  - {fileID: 2100000, guid: ac555ca92b8d47749a14919ed6ea642a, type: 2}
+  - {fileID: 2100000, guid: a233a91d2b91f014d843a134b064442e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4051,7 +4051,7 @@ MeshRenderer:
   - {fileID: 2100000, guid: 06c2d8745c89e0f4cb97d563397c8950, type: 2}
   - {fileID: 2100000, guid: ed00e3a11ee01d5488f0ed908688afc5, type: 2}
   - {fileID: 2100000, guid: dc294787f2c0c2b4d9683a355634270b, type: 2}
-  - {fileID: 2100000, guid: af106433a8aa3604da5d40a8bf893133, type: 2}
+  - {fileID: 2100000, guid: 32b255f65ae955b4c9aa6a721a84f08d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5650,7 +5650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   door: {fileID: 1823790371}
-  openAngle: -90
+  openAngle: 90
   openSpeed: 2
   interactionDistance: 1.5
   openKey: 101
