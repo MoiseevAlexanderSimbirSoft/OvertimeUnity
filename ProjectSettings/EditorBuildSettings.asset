@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SamaraCoins.unity
     guid: 89266373e7fae6f42b53101b44fe2e74
+  - enabled: 1
+    path: Assets/Scenes/KazanOffice.unity
+    guid: 5e74345711e636b44944536829e0714b
   m_configObjects: {}
