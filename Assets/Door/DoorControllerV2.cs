@@ -9,7 +9,7 @@ public class DoorControllerV2 : MonoBehaviour
     public float openAngle = -90f;
     public float openSpeed = 2f;
     
-    public float interactionDistance = 3f;
+    public float interactionDistance = 1.5f;
     
     public KeyCode openKey = KeyCode.E;
     
