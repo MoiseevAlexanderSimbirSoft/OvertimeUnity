@@ -7,7 +7,7 @@ public class KeyManager : MonoBehaviour
 {
     public static KeyManager Instance { get; private set; }
     public TextMeshProUGUI keyText;
-    public TextMeshProUGUI winText;
+    public WinMenu winMenu;
     private int keyCount = 0;
     private GameObject Player;
 
@@ -45,8 +45,7 @@ public class KeyManager : MonoBehaviour
 
         if (keyCount >= 1)
         {
-            winText.text = "You Win!";
-            winText.gameObject.SetActive(true);
+            winMenu.ShowWinMenu();
             Player.SetActive(false);
         }
     }

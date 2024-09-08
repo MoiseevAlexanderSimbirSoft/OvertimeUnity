@@ -8,14 +8,12 @@ public class Serega_AI : MonoBehaviour
 {
     private NavMeshAgent AI_Agent;
     private GameObject Player;
-    public GameObject Panel_GameOver;
-    private TextMeshProUGUI gameOverText;
+    public LoseMenu loseMenu;
 
     void Start()
     {
         AI_Agent = gameObject.GetComponent<NavMeshAgent>();
         Player = GameObject.FindGameObjectWithTag("Player");
-        gameOverText = Panel_GameOver.GetComponentInChildren<TextMeshProUGUI>();
     }
     
     void FixedUpdate()
@@ -25,8 +23,7 @@ public class Serega_AI : MonoBehaviour
         if(Dist_Player < 1)
         {
             Player.SetActive(false);
-            gameOverText.text = "Серега оказался быстрее";
-            Panel_GameOver.SetActive(true);
+            loseMenu.ShowLoseMenu();
         }
     }
 }
