@@ -7,6 +7,6 @@ public class MainMenu : MonoBehaviour
 {
     public void navigate(string targetScene)
     {
-        SceneManager.LoadSceneAsync(targetScene);
+        SceneManager.LoadScene(targetScene);
     } 
 }
